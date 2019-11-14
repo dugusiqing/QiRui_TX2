@@ -59,5 +59,6 @@ GLOG_logtostderr=1 $TOOLS/convert_imageset \
     $VAL_DATA_ROOT \
     $DATA/val.txt \
     $EXAMPLE/tsr_val_lmdb	#创建文件夹，保存val.lmdb
-
+echo "删除原始数据"
+rm -rf $DATA
 echo "Done."
