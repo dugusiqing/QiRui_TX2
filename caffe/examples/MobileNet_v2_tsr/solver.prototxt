@@ -1,0 +1,21 @@
+net: "examples/MobileNet_v2/MobileNet_v2_train.protxt"
+test_iter: 1000
+test_interval: 1000
+base_lr: 0.045
+display: 100
+average_loss: 100
+max_iter: 900000
+lr_policy: "step"
+####### 1 epoch = 53382 Iteration( batch_size = 24 )
+stepsize: 53383
+gamma: 0.98
+weight_decay: 0.00004
+momentum: 0.9
+snapshot: 5000
+snapshot_prefix: "models/MobileNet_v2/MobileNet_v2"
+solver_mode: GPU
+device_id: 0
+debug_info: false
+snapshot_after_train: true
+test_initialization: false
+type: "SGD"
